@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './styles.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <h1>Welcome to Cool Webpage</h1>
       </header>
+      <div className="container">
+        <h2>About This Page</h2>
+        <p>
+          This is a simple example of a React.js project with a separate CSS file for styling.
+          The goal is to demonstrate a clean and modern design using basic CSS properties.
+        </p>
+        <button onClick={() => alert('Button clicked!')}>Click Me</button>
+      </div>
     </div>
   );
 }
